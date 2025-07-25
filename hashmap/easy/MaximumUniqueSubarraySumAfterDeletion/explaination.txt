@@ -1,0 +1,15 @@
+Traverse over the numbers in nums
+
+    If the number is postive and undiscovered
+
+        add it too a unique counter
+
+        add the number to the result
+
+
+If you never encountered a positive number
+
+    return the largest number in the list 
+
+
+If you did encounter a postive number, your max counter is valid and you can return it
