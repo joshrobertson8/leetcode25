@@ -13,3 +13,5 @@ If you never encountered a positive number
 
 
 If you did encounter a postive number, your max counter is valid and you can return it
+
+[]
