@@ -1,0 +1,13 @@
+the outer loop iterates through all possible subsets of the input list 
+
+    the inner loop checks each element in the current subsets
+
+        if the current element is included in the subset the bitwise OR is computed
+    
+    if the current bitwise OR is greater than the maximum found so far, update the maximum and reset the count
+
+    if the current bitwise OR is equal to the maximum found so far, increment the count
+
+return the count of subsets that yield the maximum bitwise OR
+
+[]

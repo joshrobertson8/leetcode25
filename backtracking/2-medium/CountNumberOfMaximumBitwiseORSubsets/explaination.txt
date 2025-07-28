@@ -1,0 +1,16 @@
+compute the max bitwise OR of all elements in nums
+
+recursivly search for all cases where the current element equals the max bitwise OR
+
+    if the current element equals the max bitwise OR
+    
+        increment the count
+
+        return to explore other elements
+
+
+    recursivly search assuming we do not include the current element
+
+    recursivly search assuming we include the current element
+
+    return the count of subsets that yield the maximum bitwise OR
