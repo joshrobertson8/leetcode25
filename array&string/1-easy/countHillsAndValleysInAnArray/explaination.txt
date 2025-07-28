@@ -1,0 +1,19 @@
+While the current number is in bounds
+
+    while the previous number is in bounds and the same as the current number
+
+        slide over to the previous number so we can avoid duplicates
+
+    while the next number is in bounds and the same as the current number
+
+        slide over to the next number so we can avoid duplicates
+
+    if the right and left numbers are in bounds:
+
+        if the current number is greater than both neighbors, increment hills
+
+        if the current number is less than both neighbors, increment valleys
+
+    update the current index to bypass the duplicates the right skipped over
+
+    return the total count of hills and valleys
