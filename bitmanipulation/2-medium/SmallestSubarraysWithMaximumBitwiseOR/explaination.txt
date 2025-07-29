@@ -1,0 +1,20 @@
+go through nums backwards
+
+    compute the OR as you go
+
+    add the or to a precomputed length list what when traversed in order gives the smallest subarray length for that OR
+
+
+travsese nums forwards
+
+    compute the OR as you go
+
+    also keep a running count
+
+    if the current OR is equal to the target OR 
+
+        break the loop
+
+    append the current count to the result list
+
+return the result list
