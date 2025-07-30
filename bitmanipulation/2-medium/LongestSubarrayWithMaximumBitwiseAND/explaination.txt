@@ -1,0 +1,18 @@
+precompute the maximum value that appears in the array
+
+
+for each number in nums
+
+    if the number is equal to the maximum value
+
+        increment a counter
+
+    else
+
+        reset the counter to 0
+
+    find the maximum of the counter and the current maximum length
+
+return the maximum length
+
+[]
