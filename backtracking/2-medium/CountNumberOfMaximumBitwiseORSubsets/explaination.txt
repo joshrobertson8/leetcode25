@@ -1,16 +1,8 @@
-compute the max bitwise OR of all elements in nums
-
-recursivly search for all cases where the current element equals the max bitwise OR
-
-    if the current element equals the max bitwise OR
-    
-        increment the count
-
-        return to explore other elements
-
-
-    recursivly search assuming we do not include the current element
-
-    recursivly search assuming we include the current element
-
-    return the count of subsets that yield the maximum bitwise OR
+1. Compute the maximum bitwise OR (maxOr) by OR-ing all elements in nums.
+2. Use a recursive backtracking function to explore all possible subsets:
+    a. At each index, you have two choices:
+        - Exclude the current element and recurse to the next index.
+        - Include the current element (update the running OR) and recurse to the next index.
+    b. If you reach the end of the array:
+        - If the running OR equals maxOr, increment the count.
+3. After exploring all subsets, return the count of subsets whose bitwise OR equals maxOr.

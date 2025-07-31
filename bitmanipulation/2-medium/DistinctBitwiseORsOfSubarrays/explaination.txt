@@ -1,0 +1,10 @@
+1. For each number in the array:
+    a. Start a new set for this position, and add the current number to it.
+    b. For each value in the set from the previous position:
+        - Compute the bitwise OR of the value and the current number.
+        - Add the result to the new set.
+    c. Update the previous set to be the new set.
+
+2. After processing all numbers, the previous set contains all possible bitwise ORs of subarrays.
+
+3. Return the length of the previous set (the number of distinct bitwise ORs).

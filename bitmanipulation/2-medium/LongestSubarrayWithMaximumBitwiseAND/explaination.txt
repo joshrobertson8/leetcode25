@@ -1,18 +1,9 @@
-precompute the maximum value that appears in the array
-
-
-for each number in nums
-
-    if the number is equal to the maximum value
-
-        increment a counter
-
-    else
-
-        reset the counter to 0
-
-    find the maximum of the counter and the current maximum length
-
-return the maximum length
-
-[]
+1. Precompute the maximum value in the array (maxVal).
+2. Initialize a counter and a variable to track the longest length.
+3. For each number in nums:
+    a. If the number equals maxVal:
+        - Increment the counter.
+    b. Else:
+        - Reset the counter to 0.
+    c. Update the longest length if the counter is greater than the current longest.
+4. Return the longest length found.

@@ -1,20 +1,12 @@
-go through nums backwards
+1. Traverse nums backwards:
+    a. Compute the bitwise OR as you go.
+    b. Store the maximum OR for each starting index in a precomputed list.
 
-    compute the OR as you go
+2. Traverse nums forwards:
+    a. For each index, set the target OR from the precomputed list.
+    b. Initialize a running OR and a counter.
+    c. Expand the subarray to the right, updating the running OR and counter.
+    d. If the running OR equals the target OR, break the loop.
+    e. Append the counter (subarray length) to the result list.
 
-    add the or to a precomputed length list what when traversed in order gives the smallest subarray length for that OR
-
-
-travsese nums forwards
-
-    compute the OR as you go
-
-    also keep a running count
-
-    if the current OR is equal to the target OR 
-
-        break the loop
-
-    append the current count to the result list
-
-return the result list
+3. Return the result list containing the minimum subarray lengths for each index.

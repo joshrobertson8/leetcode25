@@ -1,19 +1,12 @@
-While the current number is in bounds
-
-    while the previous number is in bounds and the same as the current number
-
-        slide over to the previous number so we can avoid duplicates
-
-    while the next number is in bounds and the same as the current number
-
-        slide over to the next number so we can avoid duplicates
-
-    if the right and left numbers are in bounds:
-
-        if the current number is greater than both neighbors, increment hills
-
-        if the current number is less than both neighbors, increment valleys
-
-    update the current index to bypass the duplicates the right skipped over
-
-    return the total count of hills and valleys
+1. Start at index 1 and iterate while the current index is within bounds.
+2. Move the left pointer leftward while:
+    a. It is in bounds.
+    b. The value equals the current number (to skip duplicates).
+3. Move the right pointer rightward while:
+    a. It is in bounds.
+    b. The value equals the current number (to skip duplicates).
+4. If both left and right neighbors are in bounds:
+    a. If the current number is greater than both neighbors, increment hills.
+    b. If the current number is less than both neighbors, increment valleys.
+5. Move the current index to the right pointer (to skip over duplicates).
+6. Return the total count of hills and valleys.

@@ -1,13 +1,12 @@
-the outer loop iterates through all possible subsets of the input list 
 
-    the inner loop checks each element in the current subsets
+Algorithm Steps:
 
-        if the current element is included in the subset the bitwise OR is computed
-    
-    if the current bitwise OR is greater than the maximum found so far, update the maximum and reset the count
-
-    if the current bitwise OR is equal to the maximum found so far, increment the count
-
-return the count of subsets that yield the maximum bitwise OR
-
-[]
+1. Iterate through all possible subsets of the input list using bitmasking.
+2. For each subset:
+    a. Compute the bitwise OR of all elements included in the subset.
+    b. If the current bitwise OR is greater than the maximum found so far:
+        - Update the maximum value.
+        - Reset the count to 1.
+    c. If the current bitwise OR equals the maximum found so far:
+        - Increment the count.
+3. After checking all subsets, return the count of subsets that yield the maximum bitwise OR.
