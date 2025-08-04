@@ -1,6 +1,6 @@
 # Leetcode 2025
 
-Welcome to **Leetcode 2025**, a curated repository documenting my progress and mastery of Data Structures and Algorithms (DSA) through Python-based solutions to Leetcode problems.
+Welcome to **Leetcode 2025**, a curated repository documenting my progress of Data Structures and Algorithms (DSA) through Python solutions to Leetcode problems.
 
 ## Repository Purpose
 
