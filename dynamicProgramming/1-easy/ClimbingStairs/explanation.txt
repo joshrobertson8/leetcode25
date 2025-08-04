@@ -1,0 +1,32 @@
+Explanation for 70. Climbing Stairs:
+
+Brute Force Solution:
+1. Recursively try every possible way to climb the stairs.
+2. At each step, you can climb either 1 or 2 stairs.
+3. The function calls itself for n-1 and n-2 until it reaches the base cases.
+4. Base cases: If n == 1, return 1. If n == 2, return 2.
+5. This solution is simple but inefficient (O(2^n) time).
+
+Top-Down DP (Memoization):
+1. Use a dictionary (memo) to store the number of ways to reach each step.
+2. Recursively compute the number of ways for n-1 and n-2, but cache results to avoid repeated work.
+3. If the result for a step is already in memo, return it directly.
+4. Base cases: memo[1] = 1, memo[2] = 2.
+5. This reduces time complexity to O(n).
+
+Bottom-Up DP (Tabulation):
+1. Use an array to store the number of ways to reach each step from 1 to n.
+2. Initialize dp[0] = 1 and dp[1] = 2 (ways to reach step 1 and 2).
+3. For each step from 3 to n, set dp[i] = dp[i-1] + dp[i-2].
+4. The answer is dp[n-1].
+5. This is also O(n) time and space, and avoids recursion.
+
+6. The problem is a classic dynamic programming problem.
+7. At each step, you can climb either 1 or 2 stairs.
+8. The number of ways to reach step n is the sum of the ways to reach step n-1 and step n-2.
+9. This is because from step n-1 you can take 1 step, and from step n-2 you can take 2 steps.
+10. The base cases are:
+    - If n == 1, there is only 1 way.
+    - If n == 2, there are 2 ways.
+11. We use two variables to keep track of the previous two results and iterate up to n.
+12. The final result is returned as the number of ways to reach the top.
