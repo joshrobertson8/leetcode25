@@ -1,0 +1,16 @@
+Explanation for 904. Fruit Into Baskets:
+
+This solution uses a sliding window approach to find the longest contiguous subarray containing at most two types of fruits:
+
+1. We use a dictionary called `basket` to keep track of the count of each fruit type in the current window.
+2. The variable `base` marks the left boundary of the window, and `idx` is the right boundary as we iterate through the array.
+3. For each fruit at position `idx`, we add it to the basket and increment its count.
+4. If the basket contains more than two types of fruits, we shrink the window from the left:
+   - We look at the fruit at position `base` (left boundary).
+   - Decrement its count in the basket.
+   - If its count reaches zero, remove it from the basket.
+   - Move the left boundary (`base`) right by one.
+5. After adjusting the window, we update `maxWindow` to be the maximum window size found so far (`idx - base + 1`).
+6. After iterating through all fruits, we return `maxWindow` as the answer.
+
+This approach ensures that we always have at most two fruit types in our window and efficiently finds the largest such window. The time complexity is O(n), where n is the number of trees.
