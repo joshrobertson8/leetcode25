@@ -1,0 +1,13 @@
+Explanation for 3477. Fruits Into Baskets II:
+
+1. Initialize a result counter `res` to 0 and get the number of baskets `n`.
+2. For each fruit in the `fruits` array:
+   a. Set a flag `unset` to 1, assuming the fruit will not be placed.
+   b. Iterate through each basket:
+      - If the current basket has enough capacity (`fruit <= baskets[j]`):
+        i. Set `unset` to 0 (fruit can be placed).
+        ii. Set `baskets[j]` to 0 to mark the basket as used.
+        iii. Break out of the basket loop since the fruit has been placed.
+   c. Add `unset` to `res` (if the fruit was not placed, `unset` remains 1 and increments the result).
+3. After all fruits are processed, return `res` as the number of unplaced fruit types.
+4. This approach modifies the `baskets` array in place to track used baskets and ensures each basket holds at most one fruit type.
