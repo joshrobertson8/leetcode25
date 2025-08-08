@@ -1,0 +1,12 @@
+Solution Explanation:
+
+This problem is solved using dynamic programming with memoization and recursion:
+
+1. Convert n to units of 25 mL for slight efficiency: `units = (n + 24) // 25`.
+2. If n is very large (>= 4800), return 1.0 directly (probability approaches 1).
+3. Use a recursive function with memoization to compute the probability for each state (remaining soup A and B), considering all four serving operations.
+4. Base cases:
+    - Both soups empty: return 0.5
+    - Only A empty: return 1.0
+    - Only B empty: return 0.0
+5. The answer is the result of the recursive function starting from (units, units).
