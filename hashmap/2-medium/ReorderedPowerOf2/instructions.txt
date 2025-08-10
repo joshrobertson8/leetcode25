@@ -1,0 +1,15 @@
+Given an integer n, determine if its digits can be reordered (without leading zeros) to form a power of two.
+
+- You may use any order of the digits.
+- The result must not have leading zeros.
+- Return True if possible, otherwise False.
+
+Examples:
+Input: n = 1
+Output: True
+
+Input: n = 10
+Output: False
+
+Constraints:
+1 <= n <= 10^9

@@ -1,0 +1,10 @@
+Solution Explanation:
+
+The solution checks if the digits of the given number n can be rearranged to form a power of two. It works as follows:
+
+1. Convert n to a string and count the frequency of each digit using Counter.
+2. For all powers of two from 2^0 up to 2^29 (since 2^30 > 10^9), count the frequency of each digit for each power of two.
+3. If any power of two has the same digit frequency as n, return True (it is possible to reorder n's digits to form that power of two).
+4. If no such power of two is found, return False.
+
+This approach is efficient because there are only 30 possible powers of two to check within the given constraints, and comparing digit counts is fast.
