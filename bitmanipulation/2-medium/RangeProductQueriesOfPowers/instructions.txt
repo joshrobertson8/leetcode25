@@ -1,0 +1,20 @@
+2438. Range Product Queries of Powers
+
+You are given a positive integer n. There exists a 0-indexed array `powers` composed of the minimum number of powers of 2 that sum to n. The array is sorted in non-decreasing order, and there is only one way to form the array.
+
+You are also given a 0-indexed 2D integer array `queries`, where `queries[i] = [lefti, righti]`. Each `queries[i]` represents a query asking for the product of all `powers[j]` with `lefti <= j <= righti`.
+
+Return an array `answers`, where `answers[i]` is the result of the i-th query modulo 10^9 + 7.
+
+Example 1:
+Input: n = 15, queries = [[0,1],[2,2],[0,3]]
+Output: [2,4,64]
+
+Example 2:
+Input: n = 2, queries = [[0,0]]
+Output: [2]
+
+Constraints:
+- 1 <= n <= 10^9
+- 1 <= queries.length <= 10^5
+- 0 <= lefti <= righti < powers.length

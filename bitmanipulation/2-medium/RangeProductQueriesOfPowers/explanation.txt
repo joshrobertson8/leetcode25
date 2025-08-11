@@ -1,0 +1,16 @@
+
+1. Decompose n into its powers of two:
+    a. Start with bit = 1 and an empty list powers.
+    b. While n > 0:
+        - If the lowest bit of n is set, append bit to powers.
+        - Left-shift bit (multiply by 2).
+        - Right-shift n (divide by 2).
+    c. The resulting powers list contains the minimum set of powers of two that sum to n, in increasing order.
+
+2. For each query [l, r]:
+    a. Initialize product = 1.
+    b. For i from l to r:
+        - Multiply product by powers[i] and take modulo 10^9+7 at each step.
+    c. Append the result to the answer list.
+
+3. Return the answer list containing the product for each query, modulo 10^9+7.
