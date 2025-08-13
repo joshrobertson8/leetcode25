@@ -1,0 +1,19 @@
+Given an integer n, determine if it is a power of three.
+
+- Return True if n is a power of three, otherwise False.
+- n is a power of three if there exists an integer x such that n == 3^x.
+
+Examples:
+Input: n = 27
+Output: True
+
+Input: n = 0
+Output: False
+
+Input: n = -1
+Output: False
+
+Constraints:
+-2^31 <= n <= 2^31 - 1
+
+Follow up: Can you solve it without loops or recursion?

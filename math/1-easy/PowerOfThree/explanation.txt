@@ -1,0 +1,7 @@
+1. If n is less than or equal to 0, return False (negative numbers and zero cannot be powers of three).
+2. While n is divisible by 3:
+    a. Divide n by 3.
+3. If n becomes 1, return True (it was a power of three). Otherwise, return False.
+
+time compexity: O(log n) 
+space complexity: O(1)
