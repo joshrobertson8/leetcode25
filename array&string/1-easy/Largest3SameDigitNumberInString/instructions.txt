@@ -1,0 +1,14 @@
+Given a string num, find the largest substring of length 3 that consists of only one unique digit.
+
+- Return the largest such substring as a string, or "" if none exists.
+- Substrings may have leading zeroes.
+
+Examples:
+Input: num = "6777133339"
+Output: "777"
+
+Input: num = "2300019"
+Output: "000"
+
+Input: num = "42352338"
+Output: ""

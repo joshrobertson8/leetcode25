@@ -1,0 +1,7 @@
+1. Initialize maxGood to 0.
+2. For each index i from 1 to len(num) - 2:
+    a. If num[i-1], num[i], and num[i+1] are all equal:
+        - Set good to num[i].
+        - Update maxGood to be the maximum of maxGood and good.
+3. If maxGood is not 0, return maxGood repeated 3 times as a string.
+4. Otherwise, return an empty string.
