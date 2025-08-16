@@ -1,0 +1,9 @@
+1. Convert num to a string.
+2. Iterate through each digit and its index:
+    a. If the digit is '6':
+        - Change it to '9'.
+        - Concatenate the unchanged part after this digit.
+        - Break the loop (only one change allowed).
+    b. If the digit is '9':
+        - Add '9' to the result string.
+3. Return the integer value of the result string.
