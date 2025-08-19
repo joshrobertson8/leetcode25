@@ -1,0 +1,12 @@
+1. Initialize two counters: count (for current streak of zeros) and answer (for total subarrays).
+2. Iterate through each number in nums:
+    a. If the number is 0:
+        - Increment count by 1.
+    b. If the number is not 0:
+        - Reset count to 0.
+    c. Add count to answer (each zero extends all previous zero subarrays by one).
+3. After the loop, answer contains the total number of zero-filled subarrays.
+
+
+Time Complexity: O(n), where n is the length of nums.
+Space Complexity: O(1), as we are using only a few variables for counting.
