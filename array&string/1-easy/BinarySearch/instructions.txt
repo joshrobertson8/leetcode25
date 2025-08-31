@@ -1,0 +1,16 @@
+Given a sorted array of integers nums and an integer target, return the index of target in nums if it exists, otherwise return -1.
+
+You must use an algorithm with O(log n) runtime complexity.
+
+Examples:
+Input: nums = [-1,0,3,5,9,12], target = 9
+Output: 4
+
+Input: nums = [-1,0,3,5,9,12], target = 2
+Output: -1
+
+Constraints:
+1 <= nums.length <= 10^4
+-10^4 < nums[i], target < 10^4
+All the integers in nums are unique.
+nums is sorted in ascending order.
