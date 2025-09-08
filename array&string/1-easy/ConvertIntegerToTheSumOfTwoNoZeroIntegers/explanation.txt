@@ -1,0 +1,9 @@
+1. Loop through possible values for the first number (num1) from 1 to n-1:
+    a. Calculate the second number (num2) as n - num1.
+    b. Check if neither num1 nor num2 contains '0' in their string representation:
+        - Convert both to strings and concatenate.
+        - If '0' is not in the concatenated string, return [num1, num2].
+2. If no such pair is found (though guaranteed for n >= 2), return an empty list.
+
+Time Complexity: O(n), where n is the input number, as we may iterate up to n times.
+Space Complexity: O(1), as we use only a few variables.
