@@ -1,0 +1,10 @@
+1. Create a set 'seen' from the brokenLetters string for O(1) lookup of broken letters.
+2. Split the input text into a list of words using split(" ").
+3. Initialize a counter 'count' to track the number of words that contain at least one broken letter.
+4. Iterate through each word in the list:
+   a. For each character in the word, check if it is in the 'seen' set.
+   b. If a broken letter is found, increment 'count' and break out of the inner loop (since we only need to know if the word is broken).
+5. Return the total number of words minus 'count' to get the number of typable words.
+
+Time Complexity: O(N), where N is the length of the text, as we process each character once.
+Space Complexity: O(M), where M is the number of broken letters, due to the set storage.
