@@ -3,7 +3,10 @@ class Solution:
         # convert 1-indexed adjacency list to 0-indexed
         return [[[v - 1, w] for v, w in row] for row in G]
     
-    def prims(self, graph): 
+    def prims(self, graph):
+        """
+        Move to the lightest / cheapest node in the connected network
+        """
         totalVertices = len(graph)
         inTree = [False] * totalVertices
         inTree[0] = True
