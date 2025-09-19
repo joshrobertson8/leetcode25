@@ -5,7 +5,7 @@ class Solution:
     
     def prims(self, graph):
         """
-        Move to the lightest / cheapest node in the connected network
+        Select to the lightest / cheapest node in the connected network
         """
         totalVertices = len(graph)
         inTree = [False] * totalVertices
