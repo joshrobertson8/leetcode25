@@ -1,0 +1,6 @@
+1. Iterate through the string, keeping only alphanumeric characters and converting them to lowercase.
+2. Check if the filtered string is equal to its reverse.
+3. Return True if it is a palindrome, False otherwise.
+
+Time Complexity: O(n), where n is the length of the input string.
+Space Complexity: O(n), for the filtered character list.
