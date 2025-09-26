@@ -1,0 +1,10 @@
+1. Sort the intervals by their start value.
+2. Initialize a list 'merged' with the first interval.
+3. Iterate through the remaining intervals:
+   a. For each interval, compare its start to the end of the last interval in 'merged' (lastEnd).
+   b. If the current interval overlaps (start <= lastEnd), merge by updating the end value to max(lastEnd, end).
+   c. Otherwise, append the current interval to 'merged'.
+4. Return the 'merged' list containing all non-overlapping intervals.
+
+Time Complexity: O(n log n), where n is the number of intervals (due to sorting).
+Space Complexity: O(n), for the output list.

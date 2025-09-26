@@ -1,0 +1,11 @@
+1. Use a TrieNode class to represent each node in the trie, with a dictionary for children and a boolean 'finished' to mark the end of a word.
+2. The Trie class has a root node and methods for insert, search, and startsWith.
+3. To insert, traverse the trie, creating nodes as needed for each character, and mark the end node's 'finished' as True.
+4. To search, traverse the trie for each character; return True only if the end node's 'finished' is True.
+5. To check startsWith, traverse the trie for the prefix; return True if all characters are found.
+
+Time Complexity:
+- Insert: O(L), where L is the length of the word.
+- Search: O(L), where L is the length of the word.
+- startsWith: O(P), where P is the length of the prefix.
+Space Complexity: O(N * L), where N is the number of words and L is the average length (for all nodes).

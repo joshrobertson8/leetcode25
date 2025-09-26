@@ -1,0 +1,7 @@
+1. Use heapq.heapify to turn the entire nums array into a min-heap in O(n) time.
+2. Repeatedly pop the smallest element from the heap until only k elements remain.
+3. The root of the heap (nums[0]) is now the kth largest element in the array.
+4. Return nums[0].
+
+Time Complexity: O(n + k log n), where n is the length of nums. Heapify is O(n), and each pop is O(log n).
+Space Complexity: O(n), for the heap.
