@@ -1,0 +1,8 @@
+1. Iterate through each cell in the grid.
+2. When a '1' (land) is found and not visited, perform BFS using a queue to mark all connected land cells as visited.
+3. For each BFS call started from a new '1', increment the island count.
+4. Continue until all cells are processed.
+5. Return the total island count.
+
+Time Complexity: O(m * n), where m and n are the grid dimensions.
+Space Complexity: O(m * n) in the worst case for the visited set and queue (all land).
