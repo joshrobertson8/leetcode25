@@ -1,0 +1,10 @@
+1. Use backtracking to generate all possible permutations of the input list.
+2. Maintain a current path (curr) representing the current permutation being built.
+3. For each recursive call, iterate through all numbers in nums:
+   a. If a number is not already in curr, add it to curr and recurse.
+   b. When curr reaches the length of nums, add a copy to the result list.
+   c. After recursion, remove the last number from curr to backtrack.
+4. Continue until all permutations are generated.
+
+Time Complexity: O(n!), where n is the length of nums, since there are n! permutations.
+Space Complexity: O(n!), for storing all permutations, plus O(n) for the recursion stack and curr list.
