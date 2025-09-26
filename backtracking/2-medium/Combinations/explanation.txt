@@ -1,0 +1,10 @@
+1. Use backtracking to generate all possible combinations of k numbers from 1 to n.
+2. Maintain a current combination (curr) and a starting number (start).
+3. For each recursive call, iterate from 'start' to n:
+   a. Add the current number to curr and recurse with the next number (i+1).
+   b. If curr reaches length k, add a copy to the result list.
+   c. After recursion, remove the last number from curr to backtrack.
+4. Continue until all combinations are generated.
+
+Time Complexity: O(C(n, k)), where C(n, k) is the number of k-combinations from n.
+Space Complexity: O(C(n, k)), for storing all combinations, plus O(k) for the recursion stack and curr list.
